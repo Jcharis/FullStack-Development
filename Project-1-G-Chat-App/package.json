@@ -1,0 +1,18 @@
+{
+  "name": "gchatapp",
+  "version": "1.0.0",
+  "description": "G-Chat app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JCharis",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.2",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}

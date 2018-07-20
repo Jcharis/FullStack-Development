@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>G-Chat App</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="jumbotron">
+		<h2>G-Chat App</h2>
+		<p>Group Chat</p>
+		
+	</div>
+	<div class="container">
+		<div class="row">
+          <div class="col-md-4">
+				<div id="my-chat" class="form-label-group">
+					<div id="chat-window">
+						<div id="output" class="alert alert-primary"></div>
+						<div id="feedback"></div>
+						
+					</div>
+					<div class="form-label-group">
+					<input type="text" class="form-control" placeholder="Username" id="handle">
+				</div>
+				<br/>
+				<div class="form-label-group">
+					<!-- <input type="text" class="form-control" placeholder="Message" id="message"> -->
+					<textarea type="text" class="form-control" placeholder="Message" id="message"></textarea>
+				</div>
+				<br/>
+					<button id="send" class="btn btn-primary">Send</button>
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+<script src="chat.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
