@@ -1,7 +1,7 @@
 {
-  "name": "gchatapp",
+  "name": "coolchat",
   "version": "1.0.0",
-  "description": "G-Chat app ",
+  "description": "Chat app ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

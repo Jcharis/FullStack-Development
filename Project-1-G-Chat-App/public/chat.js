@@ -26,7 +26,7 @@ message.addEventListener('keypress',function(){
 
  // Listen for event changes
  socket.on('chat',function(data){
- 	// feedback.innerHTML="";
+ 	feedback.innerHTML="";
  	output.innerHTML+='<p><span style="color:blue;font-weight:bolder;"><i class="fas fa-user"></i> '+data.handle+':</span>'+data.message+'</p>';
  });
 
