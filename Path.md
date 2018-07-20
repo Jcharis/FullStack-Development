@@ -9,3 +9,12 @@
  - Express.js
  - Python(Flask)
  - Python(Django)
+
+- Database
+ - Sql
+ - Sqlalchemy
+ - Sqlite3
+ - MongoDB
+ - Firebase
+ - MySql
+ 
