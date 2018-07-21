@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Express App</title>
+</head>
+<body>
+	<h2>Login with Query Strings</h2>
+	<p>Your name is : <%=qs.name %></p>
+
+	<hr/>
+	<form>
+		<div>
+			<label>Username</label>
+			<input type="text" name="username" value="<%=qs.name%>">
+		</div>
+		<br/>
+		<div>
+		<label>Email</label>
+		<input type="text" name="email">
+	</div>
+	<br/>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
