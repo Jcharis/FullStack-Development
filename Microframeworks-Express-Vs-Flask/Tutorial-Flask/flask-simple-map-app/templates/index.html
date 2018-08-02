@@ -1,0 +1,53 @@
+{% extends "material/base.html" %}
+{% block content %}
+
+<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+ <!-- SHOWCASE -->
+    <div class="showcase container">
+      <div class="row blue">
+        <div class="col s12 m10 offset-m1 center">
+          <h5>Welcome to Flask Tut - Maps </h5>
+          <h2>With Materialize</h2>
+          <p></p>
+          <br>
+        </div>
+      </div>
+    </div>
+<div class="container">
+	<div class="row">
+    <div class="col s12 m12">
+      <div class="card">
+		    <div class="card-image waves-effect waves-block waves-light">
+		    	<!-- Inserted Dynamic Places In Image -->
+		      <img src="https://maps.googleapis.com/maps/api/staticmap?size=700x300&markers={{place}}" alt="map of {{place}}">
+		    </div>
+		    <div class="card-content">
+		      <span class="card-title activator grey-text text-darken-4">World Map<i class="material-icons right">more_vert</i></span>
+		      <p><a href="#">This is a {{place}}</a></p>
+		    </div>
+		    <div class="card-reveal">
+		      <span class="card-title grey-text text-darken-4">Street Map<i class="material-icons right">close</i></span>
+			      <div class="card-image waves-effect waves-block waves-light">
+			      	<!-- Inserted Dynamic Places In Image -->
+			      	<img class="activator" src="https://maps.googleapis.com/maps/api/streetview?size=700x300&location={{place}}" alt="street view of {{place}}">
+			      </div>
+      
+    	</div>
+   </div>	
+</div>
+</div>
+
+
+
+</div>
+
+
+
+  
+
+	
+{% endblock %}
