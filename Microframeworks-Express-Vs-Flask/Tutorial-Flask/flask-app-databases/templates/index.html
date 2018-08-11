@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask Microframeworks - Databases</title>
+</head>
+<body>
+	<h2>Flask DataBases With SQLAlchemy</h2>
+
+	<form action="{{url_for('adduser')}}" method="POST">
+		<div><label>Firstname</label>
+			<input type="text" name="firstname" placeholder="firstname">
+		</div>
+		<br/>
+		<div>
+			<label>Lastname</label>
+			<input type="text" name="lastname" placeholder="lastname">
+		</div><br/>
+		<div>
+			<label>Email</label>
+			<input type="email" name="email" placeholder="email">
+		</div><br/>
+		<div>
+			<label>Password</label>
+			<input type="password" name="password">
+		</div>
+		<br/>
+		<input type="submit" value="Submit">
+	</form>
+
+</body>
+</html>

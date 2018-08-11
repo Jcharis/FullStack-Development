@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Results</title>
+</head>
+<body>
+
+<div>
+	<ul> {% for user in userslist %}
+	<li>Name:{{ user.firstname }}</li>
+	<li>Email:{{ user.email }}</li>
+    <button><a href="{{ url_for('profile',firstname=user.firstname)}}">View</a></button>
+
+	</ul>{% endfor %}
+
+</div>
+</body>
+</html>
