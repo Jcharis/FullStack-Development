@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Express Database</title>
+</head>
+<body>
+	<h2>Results</h2>
+	
+
+	<ul>
+			<% myresults.forEach(function(item){%>
+			<li><%= item.Firstname %> | <%=item.Lastname%> | <%=item.Email%> </li>
+			
+
+		<%}); %>
+		</ul>
+</body>
+</html>
