@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Registration - Iris Web Framework</title>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+        <h3><a class="btn btn-secondary" href="/employee"><i class="fa fa-plus"></i> Create New</a> Employee List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Date of Birth</th>
+            <th>City</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range .Person }}
+        <tr>
+            <td>{{.FirstName}}</td>
+            <td>{{.LastName}}</td>
+            <td>{{.Email}}</td>
+            <td>{{.DateofBirth}}</td>
+            <td>{{.City}}</td>
+            <td>
+                <a href=""><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/results/{{.FirstName}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+       {{end}}
+    </tbody>
+</table>
+        
+    </div>
+	
+</body>
+</html>

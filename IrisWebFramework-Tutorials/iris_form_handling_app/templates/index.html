@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Registration - Iris Web Framework</title>
+</head>
+<body>
+	<h2>User Registration-Form</h2>
+	<div>
+		<form action="/process" method="post">
+			<input type="text" name="firstname">
+			<input type="text" name="lastname">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<div>
+		<p> Hello {{ .fname }}</p>
+		<p>Your last name is {{ .lname }}</p>
+	</div>
+
+</body>
+</html>
